@@ -1,4 +1,4 @@
-package com.demo.microservice.demomicroservice;
+package com.demo.microservice.demomicroservice.helloworld;
 
 public class HelloWorldBean {
 
