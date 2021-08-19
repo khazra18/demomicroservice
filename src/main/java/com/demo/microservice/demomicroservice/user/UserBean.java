@@ -1,9 +1,20 @@
 package com.demo.microservice.demomicroservice.user;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.Size;
+
+@Entity(name = "userbean")
 public class UserBean {
 
+	@Id
+	@GeneratedValue
 	private int id;
+	
+	@Size(min = 2, message = "Name should have atleast more than two characters")
 	private String name;
+	
 	private String cityName;
 
 	public UserBean() {
